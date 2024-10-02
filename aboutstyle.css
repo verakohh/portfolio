@@ -1,0 +1,120 @@
+
+/* Header */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--light-blue);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--blue);
+    color: var(--cream);
+    margin-bottom: 40px;
+    border-radius: 15px; /* Rounded edges for the header */
+}
+
+.intro h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: var(--text-secondary);
+}
+
+/* Skills Section */
+.skills {
+    margin: 40px 10%;
+}
+
+.skills h3 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Education Section */
+.education {
+    margin: 40px 10%;
+}
+
+.education h3 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.education p {
+    font-size: 1.2em;
+}
+
+/* Interests Section */
+.interests {
+    margin: 40px 10%;
+}
+
+.interests h3 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.interests p {
+    font-size: 1.2em;
+}
+
+/* Contact Section */
+.contact {
+    margin: 40px 10%;
+    text-align: center;
+}
+
+.contact h3 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: var(--blue);
+    margin: 0 15px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--red);
+}
+

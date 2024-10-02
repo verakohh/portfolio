@@ -1,0 +1,14 @@
+:root {
+    /* Color Scheme Variables */
+    --blue: #5E7DD0;
+    --light-blue: #9BCDD6;
+    --red: #E24F3F;
+    --green: #48B07B;
+    --pink: #FABBCE;
+    --cream: #FAF7EE;
+    --yellow: #FBD045;
+
+    /* Text Colors */
+    --text-primary: #222222;
+    --text-secondary: #FAF7EE;
+}

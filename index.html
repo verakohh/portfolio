@@ -4,55 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vera Koh Portfolio</title>
+    <link rel="stylesheet" href="variables.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css"> <!-- Home-specific styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="header-top">
-            <span>FREE SHIPPING OVER $200</span>
-        </div>
-        <div class="header-main">
-            <h1>Vera Koh</h1>
+        <div class="header-main light-blue-header">
             <nav>
                 <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Work Experience</a></li>
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="workexperience.html">Work Experience</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Making the mundane magical.</h2>
-            <button>Explore Projects</button>
-        </section>
-
-        <section class="latest-works">
-            <h2>Latest Works</h2>
-            <div class="work-grid">
-                <div class="work-item" id="projects">
-                    <img src="https://via.placeholder.com/300" alt="Projects">
-                    <h3>Projects</h3>
-                    <p>A collection of my latest development projects showcasing my skills.</p>
-                </div>
-                <div class="work-item" id="experience">
-                    <img src="https://via.placeholder.com/300" alt="Work Experience">
-                    <h3>Work Experience</h3>
-                    <p>My professional experience and the projects I've contributed to.</p>
-                </div>
-                <div class="work-item" id="about">
-                    <img src="https://via.placeholder.com/300" alt="About Me">
-                    <h3>About Me</h3>
-                    <p>Learn more about my journey, passions, and skills.</p>
+        <section class="intro">
+            <div class="intro-content">
+                <img src="assets/selfie.png" alt="Vera's Picture" class="profile-picture">
+                <div class="intro-text">
+                    <h2>Hi, I am Vera -<br>a penultimate computer science student!</h2>
                 </div>
             </div>
         </section>
-    </main>
+        
 
-    <footer>
-        <p>xo, Vera. Bringing passion and creativity to everything I do.</p>
-    </footer>
+        <section class="latest-works">
+            <div class="home-work-grid">
+                <div class="home-work-item" id="projects">
+                    <a href="projects.html">
+                        <i class="fas fa-code fa-4x" style="color: var(--blue);"></i>
+                        <h3>Projects</h3>
+                    </a>
+                </div>
+                <div class="home-work-item" id="experience">
+                    <a href="workexperience.html">
+                        <i class="fas fa-briefcase fa-4x" style="color: var(--green);"></i>
+                        <h3>Work Experience</h3>
+                    </a>
+                </div>
+                <div class="home-work-item" id="about">
+                    <a href="aboutme.html">
+                        <i class="fas fa-user fa-4x" style="color: var(--red);"></i>
+                        <h3>About Me</h3>
+                    </a>
+                </div>                
+            </div>
+        </section>
+    </main>  
+
+    <script src="footer.js"></script>
+
+
 </body>
 </html>

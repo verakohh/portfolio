@@ -1,0 +1,51 @@
+/* Projects Page Styles */
+.project-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 10%;
+    border: 2px solid var(--pink);
+    border-radius: 10px;
+    background-color: var(--rectangle-bg-light);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+body.dark-mode .project-container {
+    border: 2px solid var(--rectangle-border-dark);
+    background-color: var(--rectangle-bg-dark);
+}
+
+.project-container img {
+    width: auto; /* Allow the image width to adjust proportionally */
+    height: 300px; /* Set a fixed height for better consistency */
+    border-radius: 8px 0 0 8px;
+    object-fit: cover; /* Ensure the image fills the given height without stretching */
+}
+
+.project-description {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-container:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
+.project-description h3 {
+    font-size: 1.5em; 
+    color: var(--text-primary);
+}
+
+.project-description a {
+    color: var(--red);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-description a:hover {
+    text-decoration: underline;
+}

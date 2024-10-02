@@ -1,0 +1,47 @@
+/* Experience Container */
+.experience-container {
+    display: flex;
+    flex-direction: column; /* Arrange image on top and description below */
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 10%;
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    background-color: var(--rectangle-bg-light);
+    transition: transform 0.3s, opacity 0.3s;
+    align-items: center; /* Center content within the container */
+}
+
+body.dark-mode .experience-container {
+    border: 2px solid var(--rectangle-border-dark);
+    background-color: var(--rectangle-bg-dark);
+}
+
+.experience-container img {
+    width: 50%; 
+    height: auto; 
+    border-radius: 15px; /* Rounded edges for the image */
+    object-fit: cover; /* Ensure the image fills its container without distortion */
+    align-self: center; /* Center the image horizontally */
+}
+
+.experience-description {
+    padding: 20px;
+    text-align: left;
+    width: 85%; /* Make the description narrower to match image width */
+}
+
+.experience-container:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
+.experience-description h3 {
+    font-size: 1.5em;
+    color: var(--text-primary);
+}
+
+.experience-description p {
+    font-size: 1em;
+    color: var(--text-primary);
+}

@@ -1,0 +1,48 @@
+/* Home Page Specific Styles */
+
+/* Latest Works Section */
+.home-work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.home-work-item {
+    background-color: var(--rectangle-bg-light);
+    padding: 20px;
+    border: 1px solid var(--rectangle-border-light);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.intro-text {
+    text-align: center; /* Align the text to the left */
+}
+
+
+.profile-picture {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.home-work-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home-work-item i {
+    margin-bottom: 15px;
+}
+
+.home-work-item h3 {
+    margin-top: 10px;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.4em;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
